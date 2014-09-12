@@ -1,0 +1,28 @@
+.custom-link-message {
+  background: #eeeeee;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  color: #32323c;
+}
+
+
+@keyframes slide-down {
+  from {
+    margin-bottom: 110px;
+    margin-top: -110px;
+  }
+  to {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+.cssanimations .animate-custom-link-message {
+  margin-bottom: 110px;
+  margin-top: -110px;
+  z-index:-1;
+  position: relative;
+  animation: slide-down 0.8s ease-out 1s;
+  animation-fill-mode: forwards;
+}
